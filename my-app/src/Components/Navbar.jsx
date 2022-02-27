@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import logo from '../images/logo.png';
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
 
@@ -16,7 +17,7 @@ function Navbar() {
   window.addEventListener('scroll',changeBackground);  
   return (
     <nav className={nav ? 'nav active': nav}>
-        <a href='www' className='logo'>
+        <a href='/' className='logo'>
             <img src={logo} alt=''/>
         </a>
         <input type='checkbox' className='menu-btn' id='menu-btn'/>
@@ -24,11 +25,11 @@ function Navbar() {
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-            <li><a href='www'className='active'>Home</a></li>
-            <li><a href='www'>About</a></li>
-            <li><a href='www'>Contact</a></li>
-            <li><a href='www'>Login</a></li>
-            <li><a href='www'>Sign Up</a></li>
+            <li><NavLink className='nav-link'to="/">Home</NavLink></li>
+            <li><NavLink className='nav-link' to="/AboutUs">About</NavLink></li>
+            <li><NavLink className='nav-link'to="/ContactUs">Contact</NavLink></li>
+            <li><NavLink className='nav-link'to="/Multiuser_Login_Page">Login</NavLink></li>
+            <li><NavLink to="/Login">Sign Up</NavLink></li>
         </ul>
         
 

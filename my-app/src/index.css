@@ -35,6 +35,61 @@ input{
   background-size: cover;
   background-image: url('./images/background.png');
 }
+
+#mains{
+
+  width:100%;
+  height:768px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./images/belongss.png');
+}
+#mainss{
+
+  width:100%;
+  height:768px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./images/fressh.png');
+}
+#mainsss{
+
+  width:100%;
+  height:768px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url('./images/belong.png');
+}
+#mainssss{
+
+  width:100%;
+  height:768px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./images/Screenshot (851).png');
+}
+#maine{
+
+  width:100%;
+  height:768px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./images/container.png');
+}
+#mainse{
+
+  width:100%;
+  height:768px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./images/footer.png');
+}
 nav{
 display: flex;
 justify-content: space-around;
@@ -357,7 +412,8 @@ font-size: 2rem;
 
 
 #contact{
-  background-color: #00b7ff;
+font-family: montserrat;
+background-color: #00b7ff;
 display:flex;
 flex-direction: column;
 justify-content: center;

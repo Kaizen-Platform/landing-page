@@ -1,22 +1,37 @@
 import React from 'react';
+import Navbar from './Components/Navbar';
 import Header from './Components/Header';
-import Feature from './Components/Feature';
 import About from './Components/About';
-import Presentation  from './Components/Presentation';
-import aboutimage  from './images/Frame 19.png';
-import aboutimage1 from './images/download.png';
+import AboutUs from './Components/AboutUs';
+
+
 import Contact from './Components/Contact';
+import { BrowserRouter as Router, Routes, 
+  Route,} from "react-router-dom";
+import ContactUs from './Components/ContactUs';
+import "./Multiuser_Login_Page.css";
+import Multiuser_Login_Page from "./Multiuser_Login_Page";
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Feature/>
-      <About image={aboutimage} title='Comes With All You Need For Daily Life' button='Get Started'/>
-      <Presentation/>
-      <About image={aboutimage1} title='Connect and Grow with these ideas' button='Lets GO!!'/>
+      <Router>
+      <Navbar/>
+        <Routes>
+        <Route path="/ContactUs" element={<ContactUs/>} />
+        <Route path="/About" element={<About/>}/>
+        <Route path="/AboutUs" element={<AboutUs/>}/>
+        <Route path="/Multiuser_Login_Page" element={<Multiuser_Login_Page/>} />
+        <Route path="/" element={<Header/>} />
+        
+        </Routes>
+        
+        
+      
       <Contact/>
+      </Router>
+      
     </div>
   );
 }

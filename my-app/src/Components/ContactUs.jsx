@@ -1,42 +1,35 @@
 import React from 'react';
+import Top from "./Top";
 
 function ContactUs() {
   return (
     <div>
-        <div class="contactme" id="contact">
-      <div class="contactOverlay">
-        <div class="container">
-          <div class="form">
-            <form action="" onSubmit="">
-              <div class="formWord">
-                <h2>Say Hello!</h2>
-                <span>Full Name</span>
-                <br />
-                <input class="input100" type="text" name="fullName" required />
-                <br />
-                <span>Phone Number</span>
-                <br />
-                <input class="input100" type="text" name="phone" required />
-                <br />
-                <span>Enter Email</span>
-                <br />
-                <input class="input100" type="text" name="email" required />
-                <br />
-              </div>
-              <div class="formWord">
-                <span>Message</span>
-                <br />
-                <textarea name="message" required></textarea>
-                <br />
-                <button>SUBMIT</button>
-
-                <div class="row">All Done</div>
-              </div>
-            </form>
-          </div>
-        </div>
+      <Top/>
+      <div id="mainssss">
+      
+      <div className='name'>
+        <h1><span>Corporate  </span>Headquarters</h1>
+        <p className='details'>101 Europa Dr. #110<br/>
+Chapel Hill, NC 27517 USA<br/>
+Tel:  (919) 928-5214<br/>
+Fax: (919) 928-5455<br/>
+        </p>
+        <br/>
+        <br/>
+        <h1><span>Public </span>Emails</h1>
+        <p className='details'>
+Technical Support:	support@cdata.com<br/>
+Website Issues:	webmaster@cdata.com<br/>
+General Questions:	questions@cdata.com<br/>
+Employment:	jobs@cdata.com<br/>
+Public Relations:	press@cdata.com<br/>
+Newsletter:	announce@cdata.com<br/>
+CEO:	ceo@cdata.com<br/>
+        </p>
+        
       </div>
     </div>
+    
     </div>
   );
 };

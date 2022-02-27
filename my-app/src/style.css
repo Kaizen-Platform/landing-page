@@ -1,0 +1,29 @@
+.g-signin{
+ 
+    margin-left: 15px;
+}
+.M-sign
+{
+    background-color: #00b7ff;
+    display: flex;
+    justify-content:center;
+    color: white;
+    border-radius:10px;
+    border: 0px solid #c8c7d5;
+    font-family: montserrat;
+    box-shadow: 5px 10px 30px rgb(2 238 255 / 34%);
+    align-items: center;
+    width: 110px;
+    height: 40px;
+   
+margin-left: 15px;    
+
+
+}
+
+#zohologo {
+    margin-left: 15px;
+    width: 160px;
+    height: 50px;
+
+}
